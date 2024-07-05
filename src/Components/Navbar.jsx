@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import { FaGithubAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { IoReorderThree } from "react-icons/io5";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbar() {
@@ -37,7 +37,7 @@ function Navbar() {
                 console.log(toggle);
               }}
             >
-              <Image src="Imgs/logo (1).png" alt="Logo" fluid />{" "}
+              <Image src="Imgs/logo (1).png" alt="Logo" className="logoimg" fluid />{" "}
               <br className="d-sm-none" />
               <span className="">Mohsin Munir</span>
             </Col>
@@ -104,7 +104,7 @@ function Navbar() {
             </Col>
           </Row>
 
-          <Row className="text-center toggle-menu" ref={menuRef}>
+          <Row className="text-center toggle-menu d-md-none" ref={menuRef}>
             <Col className="mt-4">
               <ul>
                 <li>
@@ -176,6 +176,11 @@ function Navbar() {
   );
 }
 const Header = styled.div`
+.logoimg{
+  transform: ${(props) => (props.togglemenu ? "rotate(360deg)" : "rotate(0deg)")};
+  transition: all 0.8s;
+}
+
 .active{
   color: #a3a1a16c;
 }

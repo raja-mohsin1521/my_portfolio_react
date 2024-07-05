@@ -1,3 +1,19 @@
-body{
-  background-color: aqua;
+
+*{
+  scrollbar-width: thin; 
+    scrollbar-color: #0F1624 #020305; 
+
+    
+    &::-webkit-scrollbar {
+      width: 8px; 
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #0F1624; 
+      border-radius: 4px; 
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #020305; 
+    }
 }
