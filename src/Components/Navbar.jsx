@@ -52,7 +52,7 @@ function Navbar() {
                     Projects
                   </a>
                   <a
-                    href="#"
+                    href="#skills"
                     className={activeMenu === "Technologies" ? "active" : ""}
                     onClick={() => handleMenuClick("Technologies")}
                   >
@@ -118,7 +118,7 @@ function Navbar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#skills"
                     className={activeMenu === "Technologies" ? "active" : ""}
                     onClick={() => handleMenuClick("Technologies")}
                   >
@@ -185,7 +185,7 @@ const Header = styled.div`
   color: #a3a1a16c;
 }
   .navigation {
-    background-color: #020305;
+    background-color: #0b111d;
   }
   .logo span {
     font-size: 100%;
@@ -208,23 +208,12 @@ const Header = styled.div`
     color: white;
     text-decoration: none;
   }
-  button {
-    border: none;
-    color: white;
-    background-color: #0b101a;
-    padding: 5px 10px;
-    margin-top: 3px;
-    transition: all 0.3s;
-  }
-  button:hover {
-    color: #7e0202;
-    background-color: #020305;
-  }
+
   .toggle-menu {
    
     height: ${(props) => (props.togglemenu ? "fit-content" : "0px")};
     transition: height 0.5s ease;
-    background-color: #020305;
+    background-color: #0b111d;
     overflow: hidden;
   }
   .toggle-menu li {

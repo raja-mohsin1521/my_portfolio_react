@@ -1,9 +1,12 @@
 
 *{
+  scroll-behavior: smooth;
+  color: white;
   scrollbar-width: thin; 
-    scrollbar-color: #0F1624 #020305; 
+    scrollbar-color: #1d2a44 #000000; 
 
-    
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     &::-webkit-scrollbar {
       width: 8px; 
     }
