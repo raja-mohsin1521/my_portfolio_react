@@ -45,7 +45,7 @@ function Navbar() {
               <Row className="justify-content-around mt-2">
                 <span className="d-flex justify-content-between menus">
                   <a
-                    href="#"
+                    href="#projects"
                     className={activeMenu === "Projects" ? "active" : ""}
                     onClick={() => handleMenuClick("Projects")}
                   >
@@ -59,7 +59,7 @@ function Navbar() {
                     Technologies
                   </a>
                   <a
-                    href="#"
+                    href="#about"
                     className={activeMenu === "About Me" ? "active" : ""}
                     onClick={() => handleMenuClick("About Me")}
                   >
@@ -109,7 +109,7 @@ function Navbar() {
               <ul>
                 <li>
                   <a
-                    href="#"
+                    href="#projects"
                     className={activeMenu === "Projects" ? "active" : ""}
                     onClick={() => handleMenuClick("Projects")}
                   >
@@ -127,7 +127,7 @@ function Navbar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#about"
                     className={activeMenu === "About Me" ? "active" : ""}
                     onClick={() => handleMenuClick("About Me")}
                   >

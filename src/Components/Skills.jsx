@@ -19,7 +19,7 @@ function Skills() {
 
   return (
     <MainSkill id="skills">
-      <Container className="px-5 my-5" fluid>
+      <Container className="px-5 my-5 my-md-0" fluid>
         <Row className=" pt-5 heading">
           <Col>
             <h1 className="display-6 ">Technologies</h1>
