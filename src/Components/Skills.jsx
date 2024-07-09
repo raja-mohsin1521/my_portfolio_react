@@ -46,7 +46,7 @@ function Skills() {
         </Row>
         <Row className=" pt-5 heading">
           <Col>
-            <h1 className="display-6 ">Additional technologies and skills</h1>
+            <h1 className="lead at ">Additional technologies and skills</h1>
           </Col>
         </Row>
         <Row className=" pt-2 ">
@@ -66,6 +66,10 @@ function Skills() {
   );
 }
 const MainSkill = styled.div`
+.at{
+  font-size: 150%;
+  font-weight: 500;
+}
   .heading h1 {
     color: white;
     font-weight: 500;
@@ -100,6 +104,7 @@ const MainSkill = styled.div`
   display: inline;
   margin-right: 10px; 
 font-size: 130%;
+font-weight: 200;
 
 }
 `;

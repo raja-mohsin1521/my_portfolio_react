@@ -6,6 +6,16 @@ import { FaGithubAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbar() {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setActiveMenu(""); 
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
   const [toggle, setToggle] = useState(false);
   const menuRef = useRef(null);
   const [activeMenu, setActiveMenu] = useState("");
@@ -63,10 +73,10 @@ function Navbar() {
                     className={activeMenu === "About Me" ? "active" : ""}
                     onClick={() => handleMenuClick("About Me")}
                   >
-                    About Me
+                    About
                   </a>
                   <a
-                    href="#"
+                    href="#contact"
                     className={activeMenu === "Contact Us" ? "active" : ""}
                     onClick={() => handleMenuClick("Contact Us")}
                   >
@@ -131,12 +141,12 @@ function Navbar() {
                     className={activeMenu === "About Me" ? "active" : ""}
                     onClick={() => handleMenuClick("About Me")}
                   >
-                    About Me
+                    About
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#contact"
                     className={activeMenu === "Contact Us" ? "active" : ""}
                     onClick={() => handleMenuClick("Contact Us")}
                   >

@@ -42,7 +42,7 @@ function Projects() {
 
   return (
     <DisplayProjects id="projects">
-      <Container className="px-5 my-5 my-md-0" fluid>
+      <Container className="px-5 mb-5 my-md-0" fluid>
         <Row className="pt-5 pb-4 heading">
           <Col>
             <h1 className="display-6 ">Projects</h1>
